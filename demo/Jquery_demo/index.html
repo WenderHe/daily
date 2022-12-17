@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="Myjs.js" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <td>作者</td>
+        <td>书名</td>
+    </tr>
+    </thead>
+<tbody class="tbody">
+<tr class="tr1">
+    <td>海明威</td>
+    <td>老人与海</td>
+    <td><a href="javascript:" class="change" >修改</a></td>
+    <td><a href="javascript:" class="delete">删除</a></td>
+</tr>
+<tr class="tr2">
+    <td>老舍</td>
+    <td>骆驼祥子</td>
+    <td><a href="javascript:" class="change" >修改</a></td>
+    <td><a href="javascript:" class="delete">删除</a></td>
+</tr>
+</tbody>
+</table>
+<div class="d3">
+    <button id="b1">添加</button>
+    <button id="b2">搜索</button>
+    <button id="b9">展示全部</button>
+</div>
+
+
+
+
+<div class="d1 common">
+<!--    外框div-->
+    <div>添加书籍</div>
+    <div >
+        <label for="i1">作者</label>
+        <input type="text" id="i1">
+    </div>
+    <div >
+        <label for="i2">书名</label>
+        <input type="text" id="i2">
+    </div>
+   <div>
+       <button id="b5">提交</button>
+       <button id="b3">取消</button>
+   </div>
+</div>
+<div class="d2 common">
+<!--    大外框-->
+<div>搜索书籍</div>
+
+    <div >
+        <label for="i3">搜索</label>
+        <input type="text" id="i3">
+    </div>
+    <div>
+        <button id="b8">搜索</button>
+        <button id="b4">取消</button>
+    </div>
+
+</div>
+<div class="d4 common">
+<!--    修改大外框-->
+    <div >
+        <div>修改书籍</div>
+        <div >
+            <label for="i4">作者</label>
+            <input type="text" id="i4">
+        </div>
+        <div >
+            <label for="i5">书名</label>
+            <input type="text" id="i5">
+        </div>
+        <div>
+            <button id="b6">修改</button>
+            <button id="b7">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
