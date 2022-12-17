@@ -1,0 +1,213 @@
+body{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.map{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    background-color:black;
+    margin: auto auto;
+border: 2px solid ghostwhite;
+}
+.Mytank{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+   background: url("img/mytank.png") no-repeat;
+    background-size: cover;
+    /*border: 1px solid red;*/
+    /*transform: rotate(180deg);*/
+    top: 600px;
+    left: 350px;
+    display: none;
+
+}
+.Brick{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:url("img/砖块.gif") no-repeat ;
+    background-size: cover;
+
+}
+.ironBrick{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:url("img/铁砖.gif") no-repeat ;
+    background-size: cover;
+
+}
+.Grass{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:url("img/草坪.gif") no-repeat ;
+    background-size: cover;
+z-index: 8;
+}
+
+
+.Bullet{
+position: absolute;
+    width: 15px;
+    height: 15px;
+/*top: 50px;*/
+/*    left: 50px;*/
+  background: url("img/myBullet.png") no-repeat;
+    background-size: contain;
+z-index: 5;
+
+
+}
+
+
+.Enemy{
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+background: url("img/enemy.gif") no-repeat;
+background-size: cover;
+
+
+}
+.Bomb{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url("img/bomb.png") no-repeat;
+    background-size: cover;
+
+
+
+
+}
+.Base{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("img/老巢.gif") no-repeat;
+    background-size: contain;
+
+
+
+}
+.Base:before{
+
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    top: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+
+
+}
+.Base2{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("img/老巢.gif") no-repeat;
+    background-size: contain;
+
+
+
+
+}
+.Base2:after{
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+
+
+
+}
+.Base3{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("img/老巢.gif") no-repeat;
+    background-size: contain;
+
+
+
+}
+.Base3:after{
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 2px;
+    background-color: red;
+
+
+
+}
+.map #victory{
+    width: 700px;
+    position: absolute;
+    z-index: 999;
+    left:-40px;
+    top: -40px;
+    filter: brightness(100%);
+}
+#defeat{
+    width: 700px;
+    position: absolute;
+    z-index: 999;
+    left:-40px;
+    top: -40px
+}
+.cover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    /*border: 1px solid red;*/
+    z-index: 10;
+    display: none;
+}
+.u1{
+
+    position: absolute;
+    /*width: 50px;*/
+top: 10px;
+    left: 400px;
+}
+.score{
+    color: white;
+    font-size: 20px;
+}
+.mylife{
+    color: white;
+    font-size: 20px;
+}
+#play{
+    position: absolute;
+    width: 400px;
+    z-index: 10;
+    left: 100px;
+    top: 100px;
+    cursor: pointer;
+}
